@@ -1,0 +1,6 @@
+.vscode
+*.DS_Store
+*__pycache__
+*.env
+webotics_web/static/.webassets-cache
+webotics_web/static/gen
