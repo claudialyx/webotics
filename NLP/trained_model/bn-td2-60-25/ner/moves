@@ -1,0 +1,32 @@
+Å´transitions⁄Ç[
+  {
+    "clas":0,
+    "move":1,
+    "label":"FSERV",
+    "name":"B-FSERV"
+  },
+  {
+    "clas":1,
+    "move":2,
+    "label":"FSERV",
+    "name":"I-FSERV"
+  },
+  {
+    "clas":2,
+    "move":3,
+    "label":"FSERV",
+    "name":"L-FSERV"
+  },
+  {
+    "clas":3,
+    "move":4,
+    "label":"FSERV",
+    "name":"U-FSERV"
+  },
+  {
+    "clas":4,
+    "move":5,
+    "label":"",
+    "name":"O"
+  }
+]
