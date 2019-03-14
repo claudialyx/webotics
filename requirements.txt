@@ -3,7 +3,7 @@ attrs==18.2.0
 autopep8==1.4.3
 CacheControl==0.12.5
 cachy==0.2.0
-certifi==2018.11.29
+certifi==2019.3.9
 cffi==1.12.1
 chardet==3.0.4
 cleo==0.6.8
@@ -15,7 +15,6 @@ cymem==2.0.2
 Cython==0.29.6
 cytoolz==0.9.0.1
 dill==0.2.8.2
-en-core-web-lg==2.0.0
 en-core-web-sm==2.0.0
 Flask==1.0.2
 Flask-Assets==0.12
