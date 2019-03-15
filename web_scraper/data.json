@@ -1,0 +1,594 @@
+[
+    {
+        "bank_name": "alliance",
+        "package_name": "Alliance Bank CashFirst Personal Loan",
+        "package_tag": "personal",
+        "interest_rate": "8.88",
+        "repayment": "490.67",
+        "link": "https://ringgitplus.com/en/personal-loan/Alliance-Bank-CashFirst-Personal-Loan.html"
+    },
+    {
+        "bank_name": "rhb",
+        "package_name": "RHB Easy-Pinjaman Ekspres",
+        "package_tag": "personal",
+        "interest_rate": "13.47",
+        "repayment": "528.92",
+        "link": "https://ringgitplus.com/en/personal-loan/RHB-Easy-Pinjaman-Ekspres.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "KFH Murabahah Personal Financing-i",
+        "package_tag": "personal",
+        "interest_rate": "6",
+        "repayment": "466.67",
+        "link": "https://ringgitplus.com/en/personal-loan/KFH-Murabahah-Personal-Financing-i.html"
+    },
+    {
+        "bank_name": "ocbc",
+        "package_name": "OCBC Al-Amin Cash Financing-i",
+        "package_tag": "personal",
+        "interest_rate": "8.99",
+        "repayment": "491.58",
+        "link": "https://ringgitplus.com/en/personal-loan/OCBC-Al-Amin-Cash-Financing-i.html"
+    },
+    {
+        "bank_name": "citibank",
+        "package_name": "Citibank Personal Loan",
+        "package_tag": "personal",
+        "interest_rate": "5.88",
+        "repayment": "465.67",
+        "link": "https://ringgitplus.com/en/personal-loan/Citibank-Personal-Loan.html"
+    },
+    {
+        "bank_name": "hsbc",
+        "package_name": "HSBC Amanah Personal Financing-i",
+        "package_tag": "personal",
+        "interest_rate": "6.88",
+        "repayment": "474.00",
+        "link": "https://ringgitplus.com/en/personal-loan/HSBC-Amanah-Personal-Financing-i.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Al Rajhi Personal Financing-i",
+        "package_tag": "personal",
+        "interest_rate": "6.99",
+        "repayment": "474.92",
+        "link": "https://ringgitplus.com/en/personal-loan/Al-Rajhi-Personal-Financing-i.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "AEON iCASH Personal Financing",
+        "package_tag": "personal",
+        "interest_rate": "7.92",
+        "repayment": "482.67",
+        "link": "https://ringgitplus.com/en/personal-loan/AEON-iCASH-Personal-Financing.html"
+    },
+    {
+        "bank_name": "alliance",
+        "package_name": "Alliance Bank CashVantage Personal Financing-i",
+        "package_tag": "personal",
+        "interest_rate": "8.88",
+        "repayment": "490.67",
+        "link": "https://ringgitplus.com/en/personal-loan/Alliance-Bank-CashVantage-Personal-Financing-i.html"
+    },
+    {
+        "bank_name": "rhb",
+        "package_name": "RHB Personal Financing-i Civil Sector",
+        "package_tag": "personal",
+        "interest_rate": "4.5",
+        "repayment": "454.17",
+        "link": "https://ringgitplus.com/en/personal-loan/RHB-Personal-Financing-i-Civil-Sector.html"
+    },
+    {
+        "bank_name": "cimb",
+        "package_name": "CIMB Cash Plus",
+        "package_tag": "personal",
+        "interest_rate": "6.88",
+        "repayment": "474.00",
+        "link": "https://ringgitplus.com/en/personal-loan/CIMB-Cash-Plus.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "IVC Personal Loan",
+        "package_tag": "personal",
+        "interest_rate": "9",
+        "repayment": "491.67",
+        "link": "https://ringgitplus.com/en/personal-loan/IVC-Personal-Loan.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "UKHWAH Cash-i",
+        "package_tag": "personal",
+        "interest_rate": "4.35",
+        "repayment": "452.92",
+        "link": "https://ringgitplus.com/en/personal-loan/UKHWAH-Cash-i.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "JCL Personal Loan",
+        "package_tag": "personal",
+        "interest_rate": "12",
+        "repayment": "516.67",
+        "link": "https://ringgitplus.com/en/personal-loan/JCL-Personal-Loan.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Standard Chartered CashOne Debt Consolidation Plan",
+        "package_tag": "personal",
+        "interest_rate": "15",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/personal-loan/Standard-Chartered-CashOne-Debt-Consolidation-Plan.html"
+    },
+    {
+        "bank_name": "rhb",
+        "package_name": "RHB ASB Financing",
+        "package_tag": "personal",
+        "interest_rate": "15",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/personal-loan/RHB-ASB-Financing.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Standard Chartered CashOne",
+        "package_tag": "personal",
+        "interest_rate": "15",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/personal-loan/Standard-Chartered-CashOne.html"
+    },
+    {
+        "bank_name": "rhb",
+        "package_name": "RHB Personal Financing",
+        "package_tag": "personal",
+        "interest_rate": "13.45",
+        "repayment": "528.75",
+        "link": "https://ringgitplus.com/en/personal-loan/RHB-Personal-Financing.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "IVC Business Loan",
+        "package_tag": "business",
+        "interest_rate": "9",
+        "repayment": "5291.67",
+        "link": "https://ringgitplus.com/en/business-loan/IVC-Business-Loan.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "MIDF Soft Loan Scheme for Small & Medium Enterprises",
+        "package_tag": "business",
+        "interest_rate": "4",
+        "repayment": "4666.67",
+        "link": "https://ringgitplus.com/en/business-loan/MIDF-Soft-Loan-Scheme-for-Small-Medium-Enterprises.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "SME Bank Business Accelerator Program",
+        "package_tag": "business",
+        "interest_rate": "4",
+        "repayment": "4666.67",
+        "link": "https://ringgitplus.com/en/business-loan/SME-Bank-Business-Accelerator-Program.html"
+    },
+    {
+        "bank_name": "uob",
+        "package_name": "UOB BizMoney",
+        "package_tag": "business",
+        "interest_rate": "6.48",
+        "repayment": "4976.67",
+        "link": "https://ringgitplus.com/en/business-loan/UOB-BizMoney.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "SME Bank Small Business Financing",
+        "package_tag": "business",
+        "interest_rate": "7.5",
+        "repayment": "5104.17",
+        "link": "https://ringgitplus.com/en/business-loan/SME-Bank-Small-Business-Financing.html"
+    },
+    {
+        "bank_name": "bsn",
+        "package_name": "BSN Microplus",
+        "package_tag": "business",
+        "interest_rate": "9.95",
+        "repayment": "5410.42",
+        "link": "https://ringgitplus.com/en/business-loan/BSN-Microplus.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Agrobank Term Financing-i",
+        "package_tag": "business",
+        "interest_rate": "",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/business-loan/Agrobank-Term-Financing-i.html"
+    },
+    {
+        "bank_name": "bsn",
+        "package_name": "BSN Micro TemanMesra",
+        "package_tag": "business",
+        "interest_rate": "",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/business-loan/BSN-Micro-TemanMesra.html"
+    },
+    {
+        "bank_name": "bsn",
+        "package_name": "BSN Micro TemaNiaga-i Tawarruq",
+        "package_tag": "business",
+        "interest_rate": "",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/business-loan/BSN-Micro-TemaNiaga-i-Tawarruq.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Bank Rakyat Skim Pembiayaan Mikro-i MEF",
+        "package_tag": "business",
+        "interest_rate": "",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/business-loan/Bank-Rakyat-Skim-Pembiayaan-Mikro-i-MEF.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Bank Rakyat Skim Pembiayaan Mikro-i MUsk",
+        "package_tag": "business",
+        "interest_rate": "",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/business-loan/Bank-Rakyat-Skim-Pembiayaan-Mikro-i-MUsk.html"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "MIDF SME Emergency Fund",
+        "package_tag": "business",
+        "interest_rate": "",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/business-loan/MIDF-SME-Emergency-Fund.html"
+    },
+    {
+        "bank_name": "bsn",
+        "package_name": "BSN Micro TemaNiaga-i Murabahah",
+        "package_tag": "business",
+        "interest_rate": "",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/business-loan/BSN-Micro-TemaNiaga-i-Murabahah.html"
+    },
+    {
+        "bank_name": "bsn",
+        "package_name": "BSN Micro TemaNiaga",
+        "package_tag": "business",
+        "interest_rate": "",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/business-loan/BSN-Micro-TemaNiaga.html"
+    },
+    {
+        "bank_name": "rhb",
+        "package_name": "RHB SME Financing Online",
+        "package_tag": "business",
+        "interest_rate": "",
+        "repayment": "",
+        "link": "https://ringgitplus.com/en/business-loan/RHB-SME-Financing-Online.html"
+    },
+    {
+        "bank_name": "cimb",
+        "package_name": "CIMB Bank Car Loan",
+        "package_tag": "car",
+        "interest_rate": "2.50%",
+        "repayment": "RM 567",
+        "link": "https://www.cimbbank.com.my/en/personal/products/loans/car-loans.html"
+    },
+    {
+        "bank_name": "affinbank",
+        "package_name": "AFFINBANK Car Loan",
+        "package_tag": "car",
+        "interest_rate": "2.92%",
+        "repayment": "RM 585",
+        "link": "https://www.affinonline.com/buying_a_car"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Bank Islam Car Loan",
+        "package_tag": "car",
+        "interest_rate": "3.00%",
+        "repayment": "RM 588",
+        "link": "http://www.bankislam.com.my/home/personal-banking/financing-products/vehicle-financing-i/"
+    },
+    {
+        "bank_name": "ambank",
+        "package_name": "AmBank Car Loan",
+        "package_tag": "car",
+        "interest_rate": "3.05%",
+        "repayment": "RM 590",
+        "link": "http://www.ambankgroup.com/en/Pages/default.aspx"
+    },
+    {
+        "bank_name": "alliance",
+        "package_name": "Alliance Bank Car Loan",
+        "package_tag": "car",
+        "interest_rate": "3.14%",
+        "repayment": "RM 594",
+        "link": "http://www.alliancebank.com.my/Personal-Banking/Loans/Hire-Purchase"
+    },
+    {
+        "bank_name": "rhb",
+        "package_name": "RHB Bank Car Loan",
+        "package_tag": "car",
+        "interest_rate": "3.18%",
+        "repayment": "RM 595",
+        "link": "https://www.rhbgroup.com/products-and-services/personal/loans/hire-purchase"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Hong Leong Bank Car Loan",
+        "package_tag": "car",
+        "interest_rate": "3.24%",
+        "repayment": "RM 598",
+        "link": "https://www.hlb.com.my/main/personal/auto-loans"
+    },
+    {
+        "bank_name": "public",
+        "package_name": "Public Bank Car Loan",
+        "package_tag": "car",
+        "interest_rate": "3.31%",
+        "repayment": "RM 601",
+        "link": "https://www.pbebank.com/Personal-Banking/Banking/Loan/Vehicle-Financing/Vehicle-Financing.aspx"
+    },
+    {
+        "bank_name": "maybank",
+        "package_name": "Maybank Car Loan",
+        "package_tag": "car",
+        "interest_rate": "3.40%",
+        "repayment": "RM 605",
+        "link": "http://www.maybank2u.com.my/mbb_info/m2u/public/personalList04.do?channelId=LOA-Loans&programId=LOA03-CarLoans&chCatId=/mbb/Personal/LOA-Loans"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Bank Muamalat Car Loan",
+        "package_tag": "car",
+        "interest_rate": "4.00%",
+        "repayment": "RM 630",
+        "link": "http://www.muamalat.com.my/consumer-banking/financing/muamalat-hire-purchase-i/"
+    },
+    {
+        "bank_name": "citibank",
+        "package_name": "Citibank Housing Loan",
+        "package_tag": "home",
+        "interest_rate": "4.65%",
+        "repayment": "RM2,578",
+        "link": "https://www.imoney.my/home-loan/citibank"
+    },
+    {
+        "bank_name": "alliance",
+        "package_name": "Alliance Bank Home Loan",
+        "package_tag": "home",
+        "interest_rate": "5.15%",
+        "repayment": "RM2,730",
+        "link": "https://www.imoney.my/home-loan/alliance-bank"
+    },
+    {
+        "bank_name": "hsbc",
+        "package_name": "HSBC Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.60%",
+        "repayment": "RM2,563",
+        "link": "https://www.imoney.my/home-loan/hsbc"
+    },
+    {
+        "bank_name": "rhb",
+        "package_name": "RHB Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.70%",
+        "repayment": "RM2,593",
+        "link": "https://www.imoney.my/home-loan/rhb"
+    },
+    {
+        "bank_name": "hsbc",
+        "package_name": "HSBC Amanah Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.60%",
+        "repayment": "RM2,563",
+        "link": "https://www.imoney.my/home-loan/hsbc-amanah"
+    },
+    {
+        "bank_name": "alliance",
+        "package_name": "Alliance Islamic Bank Home Loan",
+        "package_tag": "home",
+        "interest_rate": "5.15%",
+        "repayment": "RM2,730",
+        "link": "https://www.imoney.my/home-loan/alliance-islamic-bank"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Bank Rakyat Home Loan",
+        "package_tag": "home",
+        "interest_rate": "5.55%",
+        "repayment": "RM2,855",
+        "link": "https://www.imoney.my/home-loan/bank-rakyat"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Bank Islam Home Loan",
+        "package_tag": "home",
+        "interest_rate": "5.40%",
+        "repayment": "RM2,808",
+        "link": "https://www.imoney.my/home-loan/bank-islam"
+    },
+    {
+        "bank_name": "ambank",
+        "package_name": "AmBank Islamic Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.75%",
+        "repayment": "RM2,608",
+        "link": "https://www.imoney.my/home-loan/ambank-islamic"
+    },
+    {
+        "bank_name": "ambank",
+        "package_name": "AmBank Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.75%",
+        "repayment": "RM2,608",
+        "link": "https://www.imoney.my/home-loan/ambank"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "AIA Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.99%",
+        "repayment": "RM2,681",
+        "link": "https://www.imoney.my/home-loan/aia"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Al-Rajhi Bank Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.70%",
+        "repayment": "RM2,593",
+        "link": "https://www.imoney.my/home-loan/al-rajhi-bank"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Affin Bank Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.73%",
+        "repayment": "RM2,602",
+        "link": "https://www.imoney.my/home-loan/affinbank"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "AFFIN ISLAMIC Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.70%",
+        "repayment": "RM2,593",
+        "link": "https://www.imoney.my/home-loan/affin-islamic"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Bank of China Malaysia Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.55%",
+        "repayment": "RM2,548",
+        "link": "https://www.imoney.my/home-loan/bank-of-china"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Bank Muamalat Home Loan",
+        "package_tag": "home",
+        "interest_rate": "5.10%",
+        "repayment": "RM2,715",
+        "link": "https://www.imoney.my/home-loan/bank-muamalat"
+    },
+    {
+        "bank_name": "uob",
+        "package_name": "UOB Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.55%",
+        "repayment": "RM2,548",
+        "link": "https://www.imoney.my/home-loan/uob"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Hong Leong Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.65%",
+        "repayment": "RM2,578",
+        "link": "https://www.imoney.my/home-loan/hong-leong"
+    },
+    {
+        "bank_name": "rhb",
+        "package_name": "RHB Islamic Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.70%",
+        "repayment": "RM2,593",
+        "link": "https://www.imoney.my/home-loan/rhb-islamic-bank"
+    },
+    {
+        "bank_name": "ocbc",
+        "package_name": "OCBC Al-Amin Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.71%",
+        "repayment": "RM2,596",
+        "link": "https://www.imoney.my/home-loan/ocbc-al-amin"
+    },
+    {
+        "bank_name": "ocbc",
+        "package_name": "OCBC Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.71%",
+        "repayment": "RM2,596",
+        "link": "https://www.imoney.my/home-loan/ocbc"
+    },
+    {
+        "bank_name": "cimb",
+        "package_name": "CIMB Home Loan",
+        "package_tag": "home",
+        "interest_rate": "5.15%",
+        "repayment": "RM2,730",
+        "link": "https://www.imoney.my/home-loan/cimb"
+    },
+    {
+        "bank_name": "cimb",
+        "package_name": "CIMB Islamic Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.90%",
+        "repayment": "RM2,654",
+        "link": "https://www.imoney.my/home-loan/cimb-islamic"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Kuwait Finance House Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.60%",
+        "repayment": "RM2,563",
+        "link": "https://www.imoney.my/home-loan/kuwait-finance-house"
+    },
+    {
+        "bank_name": "maybank",
+        "package_name": "Maybank Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.55%",
+        "repayment": "RM2,548",
+        "link": "https://www.imoney.my/home-loan/maybank"
+    },
+    {
+        "bank_name": "maybank",
+        "package_name": "Maybank Islamic Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.55%",
+        "repayment": "RM2,548",
+        "link": "https://www.imoney.my/home-loan/maybank-islamic"
+    },
+    {
+        "bank_name": "public",
+        "package_name": "Public Islamic Bank Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.62%",
+        "repayment": "RM2,569",
+        "link": "https://www.imoney.my/home-loan/public-islamic-bank"
+    },
+    {
+        "bank_name": "public",
+        "package_name": "Public Bank Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.62%",
+        "repayment": "RM2,569",
+        "link": "https://www.imoney.my/home-loan/public-bank"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Standard Chartered Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.72%",
+        "repayment": "RM2,599",
+        "link": "https://www.imoney.my/home-loan/standard-chartered"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "Standard Chartered Saadiq Home Loan",
+        "package_tag": "home",
+        "interest_rate": "4.72%",
+        "repayment": "RM2,599",
+        "link": "https://www.imoney.my/home-loan/standard-chartered-saadiq"
+    },
+    {
+        "bank_name": "none",
+        "package_name": "MBSB Home Loan",
+        "package_tag": "home",
+        "interest_rate": "9.20%",
+        "repayment": "RM4,095",
+        "link": "https://www.imoney.my/home-loan/mbsb"
+    }
+]
