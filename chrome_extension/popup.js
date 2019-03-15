@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 	// 1. Select the portion of the document to be processed
+	debugger
 	let body = document.body;
 	// 2. Make a copy of the portion and perform operation from here in order not to affect the "current"  webpage
 	let cloned_body = body.cloneNode(true);
@@ -32,15 +33,15 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.addEventListener('change', postData);
 	function postData(e) {
 		e.preventDefault();
-
-		fetch('https://jsonplaceholder.typicode.com/comments', 
-		{
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json"
-			},
-			body: JSON.stringify({ data: stringified_body})
-		})
+		debugger
+		fetch('http://127.0.0.1:5000/_words',
+			{
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({ data: stringified_body })
+			})
 			.then(checkStatus)
 			.then(res => res.json())
 			.then(data => console.log(data))
@@ -49,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	 * Operations after receiving response from website
 	 * Perform if else condition from here on
 	 */
-	url = `https://dog.ceo/api/breeds/list/all`;
+	url = `http://127.0.0.1:5000/_words`;
 	fetchData(url)
 		.then(data => populate(data.message))
 
