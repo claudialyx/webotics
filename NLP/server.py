@@ -1,12 +1,18 @@
 from __future__ import unicode_literals, print_function
 import json
+import os
 import spacy
 import plac # wrapper over argparse
 import random
 from pathlib import Path
 # from tqdm import tqdm #loading bar
 from spacy.util import minibatch, compounding
-from training_data2 import TRAIN_DATA
+from NLP.training_data2 import TRAIN_DATA
+
+# Start of sharing location on "brain folder" generation on server.py and test.py
+brain_name = "brain3_25"
+brain_folder_name = os.path.join(os.path.dirname(
+	os.path.abspath(__file__)), f"trained_model\\{brain_name}")
 
 nlp1 = spacy.load('en_core_web_sm')
 # Add entity recognizer to model if it's not in the pipeline
@@ -16,12 +22,13 @@ LABEL = 'FSERV'
 @plac.annotations(
     model=("en_core_web_sm", "option", "m", str),
     new_model_name=("New model name for model meta.", "option", "nm", str),
-    output_dir=("C:\\Users\\User\\Desktop\\Pitch Project\\webotics_template\\NLP\\trained_model\\bn-td2-25-40", "option", "o", Path),
+    output_dir=(f"{brain_folder_name}", "option", "o", Path),
     n_iter=(25, "option", "n", int))
 
 # def main(model=None, new_model_name='fserv', output_dir=None, n_iter=10):
-def main(model=None, new_model_name='fserv', output_dir="C:\\Users\\User\\Desktop\\Pitch Project\\webotics_template\\NLP\\trained_model\\bn-td2-25-40", n_iter=25):
+def main(model="en_core_web_sm", new_model_name='fserv', output_dir=f"{brain_folder_name}", n_iter=25):
     # """Set up the pipeline and entity recognizer, and train the new entity."""
+    print(output_dir)
     if model is not None:
         nlp = spacy.load(model)  # load existing spaCy model
         print("Loaded model '%s'" % model)
