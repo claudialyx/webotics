@@ -12,6 +12,7 @@ bank_list=['affinbank', 'alliance', 'ambank', 'bankislam', 'bankrakyat', 'bsn', 
 
 #setting loop to cycle through website's loan and storing into empty array data_object
 personal_loans = personal_soup.find_all('tr', class_="featured")
+personal_loan_list=[]
 for personal_loan in personal_loans:
     bank_name = 'none'
     package_name = personal_loan.get('data-name')
@@ -27,7 +28,7 @@ for personal_loan in personal_loans:
     apply_link = personal_loan.find('a').get('href')
     link = webpage + apply_link
     personal_loan_data = {"bank_name": bank_name, "package_name": package_name,"package_tag":package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":link}
-    data_object.append(personal_loan_data)
+    personal_loan_list.append(personal_loan_data)
 
 #business loan scraper
 
@@ -37,6 +38,7 @@ business_soup = BeautifulSoup(business_loan_page.text, 'html.parser')
 
 #setting loop to cycle through website's loan and storing into empty array data_object
 business_loans = business_soup.find_all('tr', class_='loan')
+business_loan_list = []
 for business_loan in business_loans:
     bank_name = 'none'
     package_name = business_loan.get('data-name')
@@ -52,7 +54,7 @@ for business_loan in business_loans:
     apply_link = business_loan.find('a').get('href')
     link = webpage + apply_link
     business_loan_data = {"bank_name": bank_name, "package_name": package_name, "package_tag": package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":link}
-    data_object.append(business_loan_data)
+    business_loan_list.append(business_loan_data)
 
 #car loan scraper
 
@@ -62,6 +64,7 @@ car_soup = BeautifulSoup(car_loan_page.text, 'html.parser')
 
 #setting loop to cycle through website's loan and storing into empty array data_object
 car_loans = car_soup.find_all('div', class_="columns list-item__info is-mobile is-multiline has-text-centered-mobile")
+car_loan_list = []
 for car_loan in car_loans:
     bank_name = 'none'
     package_name = car_loan.find('a').get_text()
@@ -75,7 +78,7 @@ for car_loan in car_loans:
     repayment = car_loan.find_all('b')[1].get_text()
     apply_link = car_loan.find('a').get('href')
     car_loan_data = {"bank_name": bank_name, "package_name": package_name, "package_tag": package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":apply_link}
-    data_object.append(car_loan_data)
+    car_loan_list.append(car_loan_data)
 
 #home loan scraper
 
@@ -85,6 +88,7 @@ home_soup = BeautifulSoup(home_loan_page.text, 'html.parser')
 
 #setting loop to cycle through website's loan and storing into empty array data_object
 home_loans = home_soup.find_all('div', class_="table__product")
+home_loan_list = []
 for home_loan in home_loans:
     bank_name = 'none'
     package_name = home_loan.find_all('a')[2].get('data-value')
@@ -100,7 +104,21 @@ for home_loan in home_loans:
     apply_link = home_loan.find('a').get('href')
     link = webpage + apply_link
     home_loan_data = {"bank_name": bank_name, "package_name": package_name, "package_tag": package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":link}
-    data_object.append(home_loan_data)
+    home_loan_list.append(home_loan_data)
+
+#saving top 3 results from each list into the data_object for the data.json
+data_object.append(personal_loan_list[0])
+data_object.append(personal_loan_list[1])
+data_object.append(personal_loan_list[2])
+data_object.append(business_loan_list[0])
+data_object.append(business_loan_list[1])
+data_object.append(business_loan_list[2])
+data_object.append(car_loan_list[0])
+data_object.append(car_loan_list[1])
+data_object.append(car_loan_list[2])
+data_object.append(home_loan_list[0])
+data_object.append(home_loan_list[1])
+data_object.append(home_loan_list[2])
 
 #using json module to save data_object into a json file
 with open('data.json', 'w') as outfile:
