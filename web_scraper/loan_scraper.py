@@ -123,4 +123,5 @@ data_object.append(home_loan_list[2])
 with open('data.json', 'w') as outfile:
     json.dump(data_object, outfile, indent=4)
 
+breakpoint
 print(data_object)
