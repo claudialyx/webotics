@@ -16,7 +16,7 @@
         "link": "https://ringgitplus.com/en/personal-loan/RHB-Easy-Pinjaman-Ekspres.html"
     },
     {
-        "bank_name": "none",
+        "bank_name": "kfh",
         "package_name": "KFH Murabahah Personal Financing-i",
         "package_tag": "personal",
         "interest_rate": "6",
@@ -24,7 +24,7 @@
         "link": "https://ringgitplus.com/en/personal-loan/KFH-Murabahah-Personal-Financing-i.html"
     },
     {
-        "bank_name": "none",
+        "bank_name": "ivc",
         "package_name": "IVC Business Loan",
         "package_tag": "business",
         "interest_rate": "9",
@@ -32,7 +32,7 @@
         "link": "https://ringgitplus.com/en/business-loan/IVC-Business-Loan.html"
     },
     {
-        "bank_name": "none",
+        "bank_name": "midf",
         "package_name": "MIDF Soft Loan Scheme for Small & Medium Enterprises",
         "package_tag": "business",
         "interest_rate": "4",
@@ -40,7 +40,7 @@
         "link": "https://ringgitplus.com/en/business-loan/MIDF-Soft-Loan-Scheme-for-Small-Medium-Enterprises.html"
     },
     {
-        "bank_name": "none",
+        "bank_name": "sme",
         "package_name": "SME Bank Business Accelerator Program",
         "package_tag": "business",
         "interest_rate": "4",
@@ -64,7 +64,7 @@
         "link": "https://www.affinonline.com/buying_a_car"
     },
     {
-        "bank_name": "none",
+        "bank_name": "bankislam",
         "package_name": "Bank Islam Car Loan",
         "package_tag": "car",
         "interest_rate": "3.00%",
