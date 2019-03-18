@@ -1,9 +1,9 @@
+import re
 import json
 import requests
 from bs4 import BeautifulSoup
 
-#personal loan scraper
-
+#--personal loan scraper--
 #setting webpage to scrap from using beautiful soup and empty array to receive all data and bank_list setup
 personal_loan_page = requests.get('https://ringgitplus.com/en/personal-loan/')
 personal_soup = BeautifulSoup(personal_loan_page.text, 'html.parser')
@@ -22,7 +22,7 @@ for personal_loan in personal_loans:
     elif bank_name in bank_list:
         bank_name = bank_name
     package_tag = 'personal'
-    interest_rate = personal_loan.find('span', class_='data interest-rate').get_text()
+    interest_rate = float(personal_loan.find('span', class_='data interest-rate').get_text())
     repayment = personal_loan.find('span', class_='data monthly-repayment').get_text()
     webpage = 'https://ringgitplus.com'
     apply_link = personal_loan.find('a').get('href')
@@ -30,8 +30,7 @@ for personal_loan in personal_loans:
     personal_loan_data = {"bank_name": bank_name, "package_name": package_name,"package_tag":package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":link}
     personal_loan_list.append(personal_loan_data)
 
-#business loan scraper
-
+#--business loan scraper--
 #setting webpage to scrap from using beautiful soup
 business_loan_page = requests.get('https://ringgitplus.com/en/business-loan/')
 business_soup = BeautifulSoup(business_loan_page.text, 'html.parser')
@@ -55,8 +54,8 @@ for business_loan in business_loans:
     link = webpage + apply_link
     business_loan_data = {"bank_name": bank_name, "package_name": package_name, "package_tag": package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":link}
     business_loan_list.append(business_loan_data)
-#car loan scraper
 
+#--car loan scraper--
 #setting webpage to scrap from using beautiful soup
 car_loan_page = requests.get('https://www.imoney.my/car-loan')
 car_soup = BeautifulSoup(car_loan_page.text, 'html.parser')
@@ -74,13 +73,19 @@ for car_loan in car_loans:
         bank_name = bank_name
     package_tag = 'car'
     interest_rate = car_loan.find_all('b')[0].get_text()
+    for i in interest_rate:
+        if i in "%":
+            interest_rate = re.sub('%','', interest_rate)
+    interest_rate = float(interest_rate)
     repayment = car_loan.find_all('b')[1].get_text()
+    for i in repayment:
+        if i in 'RM':
+            repayment = re.sub('RM','', repayment)
     apply_link = car_loan.find('a').get('href')
     car_loan_data = {"bank_name": bank_name, "package_name": package_name, "package_tag": package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":apply_link}
     car_loan_list.append(car_loan_data)
 
-#home loan scraper
-
+#--home loan scraper--
 #setting webpage to scrap from using beautiful soup
 home_loan_page= requests.get('https://www.imoney.my/home-loan')
 home_soup = BeautifulSoup(home_loan_page.text, 'html.parser')
@@ -98,7 +103,14 @@ for home_loan in home_loans:
         bank_name = bank_name
     package_tag = 'home'
     interest_rate = home_loan.find_all('span', class_='col-rate--item')[0].get_text()
+    for i in interest_rate:
+        if i in "%":
+            interest_rate = re.sub('%','', interest_rate)
+    interest_rate = float(interest_rate)
     repayment = home_loan.find_all('span', class_='col-rate--item')[2].get_text()
+    for i in repayment:
+        if i in 'RM':
+            repayment = re.sub('RM','', repayment)
     webpage = 'https://www.imoney.my'
     apply_link = home_loan.find('a').get('href')
     link = webpage + apply_link
@@ -123,5 +135,4 @@ data_object.append(home_loan_list[2])
 with open('data.json', 'w') as outfile:
     json.dump(data_object, outfile, indent=4)
 
-breakpoint
 print(data_object)

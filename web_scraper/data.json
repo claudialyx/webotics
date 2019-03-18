@@ -3,7 +3,7 @@
         "bank_name": "alliance",
         "package_name": "Alliance Bank CashFirst Personal Loan",
         "package_tag": "personal",
-        "interest_rate": "8.88",
+        "interest_rate": 8.88,
         "repayment": "490.67",
         "link": "https://ringgitplus.com/en/personal-loan/Alliance-Bank-CashFirst-Personal-Loan.html"
     },
@@ -11,7 +11,7 @@
         "bank_name": "rhb",
         "package_name": "RHB Easy-Pinjaman Ekspres",
         "package_tag": "personal",
-        "interest_rate": "13.47",
+        "interest_rate": 13.47,
         "repayment": "528.92",
         "link": "https://ringgitplus.com/en/personal-loan/RHB-Easy-Pinjaman-Ekspres.html"
     },
@@ -19,7 +19,7 @@
         "bank_name": "kfh",
         "package_name": "KFH Murabahah Personal Financing-i",
         "package_tag": "personal",
-        "interest_rate": "6",
+        "interest_rate": 6.0,
         "repayment": "466.67",
         "link": "https://ringgitplus.com/en/personal-loan/KFH-Murabahah-Personal-Financing-i.html"
     },
@@ -51,48 +51,48 @@
         "bank_name": "cimb",
         "package_name": "CIMB Bank Car Loan",
         "package_tag": "car",
-        "interest_rate": "2.50%",
-        "repayment": "RM 567",
+        "interest_rate": 2.5,
+        "repayment": " 567",
         "link": "https://www.cimbbank.com.my/en/personal/products/loans/car-loans.html"
     },
     {
         "bank_name": "affinbank",
         "package_name": "AFFINBANK Car Loan",
         "package_tag": "car",
-        "interest_rate": "2.92%",
-        "repayment": "RM 585",
+        "interest_rate": 2.92,
+        "repayment": " 585",
         "link": "https://www.affinonline.com/buying_a_car"
     },
     {
         "bank_name": "bankislam",
         "package_name": "Bank Islam Car Loan",
         "package_tag": "car",
-        "interest_rate": "3.00%",
-        "repayment": "RM 588",
+        "interest_rate": 3.0,
+        "repayment": " 588",
         "link": "http://www.bankislam.com.my/home/personal-banking/financing-products/vehicle-financing-i/"
     },
     {
         "bank_name": "citibank",
         "package_name": "Citibank Housing Loan",
         "package_tag": "home",
-        "interest_rate": "4.65%",
-        "repayment": "RM2,578",
+        "interest_rate": 4.65,
+        "repayment": "2,578",
         "link": "https://www.imoney.my/home-loan/citibank"
     },
     {
         "bank_name": "alliance",
         "package_name": "Alliance Bank Home Loan",
         "package_tag": "home",
-        "interest_rate": "5.15%",
-        "repayment": "RM2,730",
+        "interest_rate": 5.15,
+        "repayment": "2,730",
         "link": "https://www.imoney.my/home-loan/alliance-bank"
     },
     {
         "bank_name": "hsbc",
         "package_name": "HSBC Home Loan",
         "package_tag": "home",
-        "interest_rate": "4.60%",
-        "repayment": "RM2,563",
+        "interest_rate": 4.6,
+        "repayment": "2,563",
         "link": "https://www.imoney.my/home-loan/hsbc"
     }
 ]
