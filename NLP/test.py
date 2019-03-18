@@ -29,9 +29,4 @@ def return_matches(input):
     for ent in doc.ents:
         print(doc, ent.text, ent.start_char, ent.end_char, ent.label_)
         storage.append(ent.text)
-<<<<<<< HEAD
     return storage
-=======
-    return storage  
-
->>>>>>> linked to localhost
