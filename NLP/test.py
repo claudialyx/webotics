@@ -1,12 +1,8 @@
 import spacy
-<<<<<<< HEAD
 
 from NLP.server import brain_folder_name
 
 input_dir = brain_folder_name
-=======
-input_dir = "C:\\Users\\User\\Desktop\\Back_end\\brain(iter-dr)\\b60-25"
->>>>>>> linked to localhost
 nlp = spacy.load(input_dir)
 
 # sentences =[
