@@ -55,7 +55,6 @@ for business_loan in business_loans:
     link = webpage + apply_link
     business_loan_data = {"bank_name": bank_name, "package_name": package_name, "package_tag": package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":link}
     business_loan_list.append(business_loan_data)
-breakpoint()
 #car loan scraper
 
 #setting webpage to scrap from using beautiful soup
