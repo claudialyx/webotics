@@ -17,10 +17,10 @@ for personal_loan in personal_loans:
     bank_name = 'none'
     package_name = personal_loan.get('data-name')
     bank_name = package_name.lower().split()[0]
-    if bank_name in bank_list:
+    if bank_name == "bank":
+        bank_name = package_name.lower().split()[0] + package_name.lower().split()[1]
+    elif bank_name in bank_list:
         bank_name = bank_name
-    else:
-        bank_name = 'none'    
     package_tag = 'personal'
     interest_rate = personal_loan.find('span', class_='data interest-rate').get_text()
     repayment = personal_loan.find('span', class_='data monthly-repayment').get_text()
@@ -43,10 +43,10 @@ for business_loan in business_loans:
     bank_name = 'none'
     package_name = business_loan.get('data-name')
     bank_name = package_name.lower().split()[0]
-    if bank_name in bank_list:
+    if bank_name == "bank":
+        bank_name = package_name.lower().split()[0] + package_name.lower().split()[1]
+    elif bank_name in bank_list:
         bank_name = bank_name
-    else:
-        bank_name = 'none'    
     package_tag = 'business'
     interest_rate = business_loan.find('span', class_='data interest-rate').get_text()
     repayment = business_loan.find('span', class_='data monthly-repayment').get_text()
@@ -55,7 +55,7 @@ for business_loan in business_loans:
     link = webpage + apply_link
     business_loan_data = {"bank_name": bank_name, "package_name": package_name, "package_tag": package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":link}
     business_loan_list.append(business_loan_data)
-
+breakpoint()
 #car loan scraper
 
 #setting webpage to scrap from using beautiful soup
@@ -69,10 +69,10 @@ for car_loan in car_loans:
     bank_name = 'none'
     package_name = car_loan.find('a').get_text()
     bank_name = package_name.lower().split()[0]
-    if bank_name in bank_list:
+    if bank_name == "bank":
+        bank_name = package_name.lower().split()[0] + package_name.lower().split()[1]
+    elif bank_name in bank_list:
         bank_name = bank_name
-    else:
-        bank_name = 'none'
     package_tag = 'car'
     interest_rate = car_loan.find_all('b')[0].get_text()
     repayment = car_loan.find_all('b')[1].get_text()
@@ -93,10 +93,10 @@ for home_loan in home_loans:
     bank_name = 'none'
     package_name = home_loan.find_all('a')[2].get('data-value')
     bank_name = package_name.lower().split()[0]
-    if bank_name in bank_list:
+    if bank_name == "bank":
+        bank_name = package_name.lower().split()[0] + package_name.lower().split()[1]
+    elif bank_name in bank_list:
         bank_name = bank_name
-    else:
-        bank_name = 'none'
     package_tag = 'home'
     interest_rate = home_loan.find_all('span', class_='col-rate--item')[0].get_text()
     repayment = home_loan.find_all('span', class_='col-rate--item')[2].get_text()
