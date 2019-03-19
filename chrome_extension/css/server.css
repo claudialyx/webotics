@@ -1,0 +1,58 @@
+.menu {
+    width: 48em;
+}
+
+#wrapper .cardholder a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+#wrapper .cardholder .card,
+#wrapper .cardholder .card * {
+    transition: all 0.5s;
+}
+
+#wrapper .cardholder .card:hover {
+    border-width: 0.1em;
+    border-top-left-radius: 1.35em;
+    border-bottom-right-radius: 1.35em;
+    box-shadow: 0.12em 0.12em rgb(133, 133, 133);
+    cursor: pointer;
+}
+
+#wrapper .cardholder .card .icon {
+    font-size: 1.5em;
+}
+
+#wrapper .cardholder .card:hover .icon {
+    font-size: 2em;
+    color: rgb(128, 89, 201);
+}
+
+#wrapper .cardholder .card:hover .package {
+    font-weight: bold;
+}
+
+#wrapper .cardholder .card:hover img {
+    border-top-left-radius: 1.3em;
+}
+
+#wrapper .cardholder .card:hover .card-body {
+    border-bottom-right-radius: 1.3em;
+    background-color: rgb(248, 171, 70);
+}
+
+#wrapper .cardholder .card .card-body {
+    background-color: antiquewhite;
+}
+
+.sort-selection:checked ~ .btn-outline-success {
+    background-color: #28a745;
+    color: white;
+}
+.highlight {
+    background-color: yellow;
+  }
+/*
+Below will be the styles for the injection
+*/
