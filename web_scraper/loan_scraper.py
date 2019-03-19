@@ -13,7 +13,7 @@ bank_list=['affinbank', 'alliance', 'ambank', 'bankislam', 'bankrakyat', 'bsn', 
 #setting loop to cycle through website's loan and storing into empty array data_object
 personal_loans = personal_soup.find_all('tr', class_="featured")
 personal_loan_list=[]
-for personal_loan in personal_loans:
+for i, personal_loan in enumerate(personal_loans):
     bank_name = 'none'
     package_name = personal_loan.get('data-name')
     bank_name = package_name.lower().split()[0]
@@ -23,12 +23,17 @@ for personal_loan in personal_loans:
         bank_name = bank_name
     package_tag = 'personal'
     interest_rate = float(personal_loan.find('span', class_='data interest-rate').get_text())
-    repayment = personal_loan.find('span', class_='data monthly-repayment').get_text()
-    webpage = 'https://ringgitplus.com'
-    apply_link = personal_loan.find('a').get('href')
-    link = webpage + apply_link
-    personal_loan_data = {"bank_name": bank_name, "package_name": package_name,"package_tag":package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":link}
-    personal_loan_list.append(personal_loan_data)
+    try:
+        repayment = float(personal_loan.find('span', class_='data monthly-repayment').get_text())
+    except:
+        print('repayment not available')
+    else:
+        print(i, repayment)
+        webpage = 'https://ringgitplus.com'
+        apply_link = personal_loan.find('a').get('href')
+        link = webpage + apply_link
+        personal_loan_data = {"bank_name": bank_name, "package_name": package_name,"package_tag":package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":link}
+        personal_loan_list.append(personal_loan_data)
 
 #--business loan scraper--
 #setting webpage to scrap from using beautiful soup
@@ -48,12 +53,21 @@ for business_loan in business_loans:
         bank_name = bank_name
     package_tag = 'business'
     interest_rate = business_loan.find('span', class_='data interest-rate').get_text()
+    if interest_rate == "":
+        interest_rate = 0.00
+    interest_rate = float(interest_rate)
     repayment = business_loan.find('span', class_='data monthly-repayment').get_text()
-    webpage = 'https://ringgitplus.com'
-    apply_link = business_loan.find('a').get('href')
-    link = webpage + apply_link
-    business_loan_data = {"bank_name": bank_name, "package_name": package_name, "package_tag": package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":link}
-    business_loan_list.append(business_loan_data)
+    try:
+        repayment = float(personal_loan.find('span', class_='data monthly-repayment').get_text())
+    except:
+        print('repayment not available')
+    else:
+        print(i, repayment)
+        webpage = 'https://ringgitplus.com'
+        apply_link = business_loan.find('a').get('href')
+        link = webpage + apply_link
+        business_loan_data = {"bank_name": bank_name, "package_name": package_name, "package_tag": package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":link}
+        business_loan_list.append(business_loan_data)
 
 #--car loan scraper--
 #setting webpage to scrap from using beautiful soup
@@ -81,6 +95,10 @@ for car_loan in car_loans:
     for i in repayment:
         if i in 'RM':
             repayment = re.sub('RM','', repayment)
+    for i in repayment:
+        if i in ' ':
+            repayment = re.sub(' ','', repayment)
+    repayment = float(repayment)
     apply_link = car_loan.find('a').get('href')
     car_loan_data = {"bank_name": bank_name, "package_name": package_name, "package_tag": package_tag, "interest_rate": interest_rate, "repayment": repayment, "link":apply_link}
     car_loan_list.append(car_loan_data)
@@ -111,6 +129,10 @@ for home_loan in home_loans:
     for i in repayment:
         if i in 'RM':
             repayment = re.sub('RM','', repayment)
+    for i in repayment:
+        if i in ',':
+            repayment = re.sub(',','',repayment)
+    repayment = float(repayment)
     webpage = 'https://www.imoney.my'
     apply_link = home_loan.find('a').get('href')
     link = webpage + apply_link
