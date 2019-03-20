@@ -9,7 +9,7 @@
     "browser_action": {
         "default_title": "Loan Suggestion for Malaysian",
         "default_icon": {
-            "128": "100_percent_128.png"
+            "128": "webotics.png"
         },
         "default_popup": "popup.html"
     },
