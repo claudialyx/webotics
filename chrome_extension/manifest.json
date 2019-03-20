@@ -4,12 +4,12 @@
     "manifest_version": 2,
     "description": "Read page content and sent to AI server for recommendation",
     "icons": {
-        "128": "100_percent_128.png"
+        "128": "finalised_logo_yellow.PNG"
     },
     "browser_action": {
         "default_title": "Loan Suggestion for Malaysian",
         "default_icon": {
-            "128": "webotics.png"
+            "128": "finalised_logo_yellow.PNG"
         },
         "default_popup": "popup.html"
     },

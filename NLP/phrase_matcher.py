@@ -4,11 +4,7 @@ from spacy.matcher import PhraseMatcher
 
 nlp = spacy.load('en_core_web_sm')
 
-#### to get start_char & end_char for FSERV
-# initialise the Matcher with a vocab.
-# the matcher must always share the same vocab with the documents it will operate on
 matcher = PhraseMatcher(nlp.vocab)
-# terminology_list = ['personal loan', 'personal financing', 'housing loan', 'car loan', 'home loan', 'islamic personal loan', 'small business loan', 'business loan']
 
 terminology_list = [
     'personal loan',

@@ -15,7 +15,6 @@ brain_folder_name = os.path.join(os.path.dirname(
 	os.path.abspath(__file__)), f"trained_model\\{brain_name}")
 
 nlp1 = spacy.load('en_core_web_sm')
-# Add entity recognizer to model if it's not in the pipeline
 # new entity label = 'FSERV' stands for financial services
 LABEL = 'FSERV'
 
@@ -65,7 +64,22 @@ def main(model="en_core_web_sm", new_model_name='fserv', output_dir=f"{brain_fol
                 nlp.update(texts, annotations, sgd=optimizer, drop=0.4,losses=losses)
             print('Losses', losses)
 
-    # test the trained model
+    # Run these codes to test the trained model:
+    # test_text =[
+#     "They are considering to get a JCL Personal loan",
+#     "personal loan, car loan, house loans, personal financing, business loan",
+#     "personal loans, car loans, house loans, personal financings, business loans",
+#     "Singapore officially the Republic of Singapore is an island city-state in Southeast Asia.",
+#     "personal loans, car loans, house loans, housing loans, personal financings, business loan",
+#     "Islamic personal loan",
+#     "Apple is looking at buying U.K. startup for $1 billion",
+#     "Jack is searching for the best interest rate for small business loans",
+#     "Compare Malaysian housing loans with our housing loan calculator.",
+#     "for a new mortgage loan or refinance your mortgage with Citibank's competitive mortgage loan",
+#     "Donald John Trump (born June 14, 1946) is the 45th and current president of the United States.",
+#     "Get the latest news, updates, and happenings at Google.",
+#     "He is in need of some personal financing advice"
+#     ]
     # test_text = 'RHB Easy-Pinjaman Ekspres, JCL Personal loan, AEON i-Cash Personal Financing are some examples of personal loans available in Malaysia.'
     # test_text = test_text.lower()
     # doc = nlp(test_text)
@@ -83,12 +97,12 @@ def main(model="en_core_web_sm", new_model_name='fserv', output_dir=f"{brain_fol
         print("Saved model to", output_dir)
         print("a", output_dir)
 
-        # test the saved model
-        # print("Loading from", output_dir)
-        # nlp2 = spacy.load(output_dir)
-        # doc2 = nlp2(test_text)
-        # for ent in doc2.ents:
-        #     print(ent.label_, ent.text)
+    # Run these code to test the saved model:
+    # print("Loading from", output_dir)
+    # nlp2 = spacy.load(output_dir)
+    # doc2 = nlp2(test_text)
+    # for ent in doc2.ents:
+    #     print(ent.label_, ent.text)
 
 if __name__ == '__main__':
     plac.call(main)
