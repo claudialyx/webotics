@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     // console.log("Working");
     // set background color
-    let first_bank;
-
-    const counts = [];
+    var first_bank;
+    var counts = [];
 
     function checkStatus(response) {
         if (response.ok) {
@@ -22,74 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
         .then(data => {
-            first_bank = data[0];
-            // console.log(first_bank);
-        })
-        .then(data => {
+            cards = data
             web_content = filter_text();
-            send_and_fetch_details(web_content);
-        })
-        .then(data => {
-            $('body').append(`
-        <style type="text/css" media="screen">
-        .flash {
-            z-index: 1500 !important;
-            position: fixed !important;
-            bottom: 3em !important;
-            right: 0 !important;
-            background-color: rgb(254, 254, 162) !important;
-            box-shadow: 0 5px 10px #ddd !important;
-            border: 2px solid rgb(244, 244, 86) !important;
-            padding: 0.1em 0.5em !important;
-            border-top-left-radius: 1.25em !important;
-            border-bottom-left-radius: 1.25em !important;
-            /* animation: disappear 3s !important; */
-            /* width: 15vw !important; */
-            width: 18em !important;
-            margin-right: -16em !important;
-            transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
-            display: grid !important;
-            grid-template-areas: "arrow item";
-        }
-        
-        plain {
-            text-decoration: none !important;
-            color: inherit !important;
-            border-bottom-style: none !important;
-        }
-        
-        .arrow {
-            grid-area: arrow;
-            margin-right: 0.7em !important;
-            transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
-        }
-        
-        .item {
-            grid-area: item;
-        }
-        
-        .flash:hover {
-            margin-right: 0 !important;
-        }
-        </style >
-            `);
+            first_bank = send_and_fetch_details(web_content)
 
-            let injected_section = `
-            <a class="plain" href="${first_bank.link}" target="_blank">
-            <div class="flash">
-                <div class="arrow">
-                    <span class="icon">👋</span>
-                </div>
-                <div class="item">
-                    <span class="icon icon-${first_bank.package_tag}"></span>
-                    <span>Hey! ${first_bank.package_name} is currently offering ${first_bank.package_tag} loan at
-                        ${first_bank.interest_rate}% ! Click me to find out more! </span>
-                </div>
-            </div>
-        </a>
-`
-            $('body').append(injected_section)
         })
+
 
     function filter_text() {
         // 1. Select the portion of the document to be processed
@@ -147,6 +84,78 @@ document.addEventListener('DOMContentLoaded', () => {
                     counts[num] = counts[num] ? counts[num] + 1 : 1;
                 }
                 console.log(counts);
+                let loans = ['car', 'personal', 'business', 'home']
+                for (loan of loans) {
+                for (count in counts) {
+                    // debugger
+                    if (count.includes(loan)) {
+                        first_bank= cards.filter(x=>x.package_tag==loan)[0]
+                        console.log(first_bank, loan)
+                        $('body').append(`
+                        <style type="text/css" media="screen">
+                        .flash {
+                            z-index: 1500 !important;
+                            position: fixed !important;
+                            bottom: 3em !important;
+                            right: 0 !important;
+                            background-color: rgb(254, 254, 162) !important;
+                            box-shadow: 0 5px 10px #ddd !important;
+                            border: 2px solid rgb(244, 244, 86) !important;
+                            padding: 0.1em 0.5em !important;
+                            border-top-left-radius: 1.25em !important;
+                            border-bottom-left-radius: 1.25em !important;
+                            /* animation: disappear 3s !important; */
+                            /* width: 15vw !important; */
+                            width: 18em !important;
+                            margin-right: -16em !important;
+                            transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+                            display: grid !important;
+                            grid-template-areas: "arrow item";
+                        }
+                        
+                        plain {
+                            text-decoration: none !important;
+                            color: inherit !important;
+                            border-bottom-style: none !important;
+                        }
+                        
+                        .arrow {
+                            grid-area: arrow;
+                            margin-right: 0.7em !important;
+                            transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+                        }
+                        
+                        .item {
+                            grid-area: item;
+                        }
+                        
+                        .flash:hover {
+                            margin-right: 0 !important;
+                        }
+                        </style >
+                            `);
+                
+                            let injected_section = `
+                            <a class="plain" href="${first_bank.link}" target="_blank">
+                            <div class="flash">
+                                <div class="arrow">
+                                    <span class="icon">👋</span>
+                                </div>
+                                <div class="item">
+                                    <span class="icon icon-${first_bank.package_tag}"></span>
+                                    <span>Hey! ${first_bank.package_name} is currently offering ${first_bank.package_tag} loan at
+                                        ${first_bank.interest_rate}% ! Click me to find out more! </span>
+                                </div>
+                            </div>
+                        </a>
+                `
+                            $('body').append(injected_section)
+                            return
+
+                    }
+                    }
+                }
+
                 // console.log(distinct_matches);
             })
         // Perform operation on the "altered" data format
