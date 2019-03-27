@@ -1,8 +1,27 @@
-# Flask Nextagram Template
+# Webotics Project (3-in-1)
 
-version 0.0.1 (alpha)
+This project consists of 3 different parts, each of them not relying on one another.
+1. webscraper
+2. spacy
+3. chrome extension
 
-## Development
+This project does not require any database to work.
+
+## Installation Steps:
+
+### 3. Chrome Extension (This does not work under other browsers)
+1. Click on the options menu at the top-right of the Chrome browser
+2. Hover over `More tools` and click on `Extensions`
+3. At the top-right of the browser, toggle the `Developer Mode` from OFF to ON
+4. A new row of options will appear, click on `Load unpacked` and navigate under `webotics > chrome_extension`
+5. Select the main folder by itself and chrome will install it based on the `manifest.json`
+
+## Overall idea on how the Chrome Extension works
+1. `manifest.json` file will contain the default settings for the extension
+2. `manifest.json > browser_action` will be the visual representation of the project
+3. `popup: html and js` will be the visual aspect of the chrome extension when clicked on
+4. `manifest.json > content_scripts` will be specifying the condition to perform when user is viewing a webpage
+5. `scripts.js` will be the process that is running based on `4` above
 
 **Make a fork before cloning**
 
