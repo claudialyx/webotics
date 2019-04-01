@@ -1,6 +1,6 @@
 # Webotics Project (3-in-1)
 
-This project consists of 3 different parts, each of them not relying on one another.
+This project consists of 3 different parts:
 1. webscraper
 2. spacy
 3. chrome extension
