@@ -1,6 +1,10 @@
 # Webotics Project (3-in-1)
 
-This project consists of 3 different parts:
+## What is webotics? 
+A chrome extension that aims to increase marketers' lead generation.
+The idea is to create a chrome extension that will trigger a pop up to appear at the side of the screen when certain keywords are recognised. 
+
+## This project consists of 3 different parts:
 1. webscraper
 2. spacy
 3. chrome extension
