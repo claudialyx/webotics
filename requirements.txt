@@ -24,7 +24,7 @@ Flask-JWT==0.3.2
 html5lib==1.0.1
 idna==2.8
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2==2.11.3
 jsmin==2.2.2
 jsonschema==3.0.0
 lockfile==0.12.2
